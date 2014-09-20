@@ -24,6 +24,8 @@ Template.prototype.init = function(resumeDiv){
   this.leftIndent = (window.innerWidth - this.resumeWidth) / 2;
   this.canvas = document.createElementNS(SVGNS, 'svg');
   this.canvas.style["border"] = "";
+  this.canvas.style["width"] = "100%";
+  this.canvas.style["min-height"] = "100%";
   if(resumeDiv === null || resumeDiv === undefined){
     this.resumeDiv = document.createElement("div");
     this.resumeDiv.setAttribute("id", "resume");
